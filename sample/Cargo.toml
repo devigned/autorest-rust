@@ -1,0 +1,26 @@
+[package]
+name = "sample"
+version = "0.1.0"
+authors = ["David Justice <david@devigned.com>"]
+license = "MIT"
+include = [
+  "Cargo.toml",
+  "LICENSE",
+  "src/**/*"
+]
+
+
+[dependencies]
+ms-rest = { path = "../runtime"}
+hyper = { git = "https://github.com/hyperium/hyper.git" }
+hyper-openssl = "0.2.3"
+futures = "0.1.7"
+futures-cpupool = "0.1"
+tokio-core = "0.1"
+pretty_env_logger = "0.1"
+log = "0.3"
+
+[[bin]]
+name = "sample"
+test = false
+doc = false

@@ -1,0 +1,6 @@
+[package]
+name = "ms-rest"
+version = "0.1.0"
+authors = ["David Justice <david@devigned.com>"]
+
+[dependencies]
